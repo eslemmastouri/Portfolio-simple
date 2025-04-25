@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h2>Welcome to My Portfolio</h2>
+            <h1>Islem Mastouri</h1>
+            <p>Frontend Developer & Designer</p>
+        </div>
+    </header>
+
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- ✅ HERO SECTION with the floating image -->
+    <section id="hero">
+        <img src="img/freepik__background__53135 (1).png" alt="3D Blob" class="hero-blob" />
+        <img src="img/freepik__background__53135.png" alt="3D Blob" class="hero-blo" />
+
+        <div class="hero-text">
+            <h1>Modern and Minimalistic</h1>
+            <p>Unlock your digital potential. I create next-level web experiences.</p>
+            <a href="#contact" class="cta-button">Contact Me</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="about">
+            <img src="img/freepik__background__53135 (1).png" alt="3D Blob" class="hero-blob" />
+
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate web developer with a love for design and clean code. I specialize in creating
+                responsive, user-friendly websites.</p>
+        </section>
+
+        <section id="projects">
+            <img src="img/freepik__background__53135 (1).png" alt="3D Blob" class="hero-blop" />
+            <img src="img/freepik__background__53135.png" alt="3D Blob" class="hero-blo" />
+
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of the project goes here.</p>
+                <a href="https://example.com/project1" target="_blank" class="info-button">More Info</a>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of the project goes here.</p>
+                <a href="https://example.com/project2" target="_blank" class="info-button">More Info</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form onsubmit="handleSubmit(event)">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+            alert(`Thank you, ${name}! Your message has been sent.`);
+        }
+    </script>
+</body>
+
+</html>
