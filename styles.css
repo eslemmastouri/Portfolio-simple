@@ -7,13 +7,28 @@ body {
 header {
     background-color: #000000;
     color: #fff;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 20px;
     text-align: center;
 
 }
 
+header h1 {
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 
+.jelly {
+    position: absolute;
+    margin-top: -200px;
+    margin-left: -500px;
+    opacity: 0.8;
+    width: 700px;
+    z-index: 1;
+    animation: float 10s ease-in-out infinite;
+
+}
 
 h1 {
     color: #fff;
@@ -54,13 +69,15 @@ nav a {
     color: white;
     padding: 14px 20px;
     text-decoration: none;
-    background-color: #000000;
+    background-color: transparent;
     border-width: 10px;
     border-radius: 30px;
     border: 1px solid #fff;
     padding: 20px;
     margin: 20px auto;
     margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+    z-index: 3;
 
 }
 
@@ -159,6 +176,27 @@ h2 {
     margin-bottom: 80px;
 }
 
+.stroke {
+    position: absolute;
+    margin-bottom: 10px;
+    margin-left: -700px;
+    opacity: 0.8;
+    width: 700px;
+    z-index: 1;
+    animation: float 6s ease-in-out infinite;
+}
+
+.strokee {
+    position: absolute;
+    margin-bottom: 10px;
+    margin-left: -700px;
+    opacity: 0.8;
+    width: 700px;
+    z-index: 1;
+    animation: float 6s ease-in-out infinite;
+
+}
+
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -172,6 +210,7 @@ textarea {
     margin-bottom: 20px;
     border: 1px solid #fff;
     background-color: #000000;
+    color: #fff;
     border-radius: 8px;
     font-size: 1em;
     box-sizing: border-box;
@@ -327,5 +366,19 @@ footer {
 
     50% {
         transform: translate(-50%, -70px);
+    }
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+    }
+
+    100% {
+        box-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
     }
 }
